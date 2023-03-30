@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@mipmap/main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginLeft="0dp"
+            android:padding="0dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/return_home"
+            android:id="@+id/imageview_back"/>
+        <TextView
+            android:textSize="26sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textColor="@android:color/white"
+            android:text="欢迎"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" />
+        <ImageView
+            android:layout_marginLeft="0dp"
+            android:padding="0dp"
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            android:background="@mipmap/return_right"
+            android:id="@+id/imageview_shuaxin"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_1"
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="255dp">
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="170dp"
+            android:layout_height="105dp"
+            android:startColor="#00FF00"
+            android:endColor="#C0C0C0"
+            android:paddingTop="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_selector_shape"
+            android:angle="0"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:text="全部数据查询"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="170dp"
+            android:layout_height="105dp"
+            android:startColor="#00FF00"
+            android:endColor="#C0C0C0"
+            android:layout_marginTop="0dp"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="12dp"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:background="@drawable/btn_selector_shape"
+            android:text="按地区查询"/>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="170dp"
+            android:layout_height="105dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:background="@drawable/btn_selector_shape"
+            android:text="按经纬度查询" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="170dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:background="@drawable/btn_selector_shape"
+            android:text="知识普及" />
+    </GridLayout>
+    <LinearLayout
+        android:id="@+id/ll_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:baselineAligned="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_know"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/iv_know"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/btn_know_nor"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:id="@+id/tv_know"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_know"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bottom_tab_know"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_want_know"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/iv_i_want_know"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/btn_wantknow_nor"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_i_want_know"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_i_want_know"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bottom_tab_wantknow"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/iv_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/btn_my_nor"
+                android:contentDescription="@null" />
+
+
+            <TextView
+                android:id="@+id/tv_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_me"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bottom_tab_my"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

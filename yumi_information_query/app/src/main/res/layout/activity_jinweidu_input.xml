@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/jingdu"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:text="请输入您的经度：例如东经116°"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+    <EditText
+        android:hint="东经："
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/edit_jingdu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <TextView
+        android:id="@+id/weidu"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:text="请输入您的纬度：例如北纬39°"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+    <EditText
+        android:hint="北纬："
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/edit_weidu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <Button
+        android:id="@+id/tiaozhuan_jingweidu"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="17dp"
+        android:layout_marginTop="100dp"
+        android:text="确认信息"
+        android:background="#AEEEEE"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <GridLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tishi"
+            android:textSize="20dp"
+            android:text="           温馨提示：仅需输入数字即可！"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" />
+    </GridLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+android:orientation="vertical">
+<Spinner android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/spn"
+
+    android:spinnerMode="dropdown"
+    android:layout_marginTop="10dp"
+    android:dropDownWidth="200dp"/>
+    <Spinner
+        android:id="@+id/city"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spn"
+        android:spinnerMode="dropdown"
+        android:dropDownWidth="200dp"
+        android:minHeight="48dp" />
+    <TextView
+        android:id="@+id/countryside"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:text="请输入你所在的乡镇："
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+    <EditText
+        android:layout_marginTop="60dp"
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <Button
+        android:id="@+id/entry"
+        android:textSize="17dp"
+        android:layout_marginTop="100dp"
+        android:text="确认信息"
+        android:background="#AEEEEE"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+</GridLayout>

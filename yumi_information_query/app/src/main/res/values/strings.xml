@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">玉米</string>
+    <string name="send_to">Send to...</string>
+    <string name="read_xlsx">Read XLSX</string>
+    <string name="write_xlsx">Write XLSX</string>
+    <string name="action_settings">Settings</string>
+    <string name="bottom_tab_know">首页</string>
+    <string name="bottom_tab_wantknow">信息查询</string>
+    <string name="bottom_tab_my">我的</string>
+</resources>
